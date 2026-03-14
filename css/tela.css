@@ -1,0 +1,47 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+}
+
+/* Container principal */
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* leve transparência */
+    padding: 30px 50px;
+    border-radius: 15px;
+}
+
+/* Relógio */
+#hora {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Input de arquivo */
+.input-container {
+    color: #fff;
+    font-size: 1rem;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
