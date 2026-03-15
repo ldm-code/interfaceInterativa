@@ -15,7 +15,7 @@
 
 - baixe ou clone esse repositorio.
 - apos isso,abra a pasta do projeto e clique no arquivo tela.html para abrilo em seu navegador.
-
+---
 ## Estrutura do Projeto
 
 - interfaceInterativa/
