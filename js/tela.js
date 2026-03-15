@@ -12,11 +12,11 @@ setInterval(atualizarHora,1000)
 imagemFundo.addEventListener("change",function(){
          let url=imagemFundo.files[0]
          if (url){
+          
 
                    let url_real=URL.createObjectURL(url)
                    const body = document.body;
-                     const largura = imagemFundo.naturalWidth;
-                     const altura = imagemFundo.naturalHeight;
+                   
 
 
                    
