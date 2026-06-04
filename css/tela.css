@@ -21,12 +21,19 @@ body {
     padding: 30px 50px;
     border-radius: 15px;
 }
-
+#data {
+    color: #f0f0f0;
+    font-size: 2.5vh;
+    font-weight: 300;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
 #hora {
-    font-size: 8vh;
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: 20px;
+    font-size: 10vh;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 5px;
 }
 .input-container {
     color: #fff;
