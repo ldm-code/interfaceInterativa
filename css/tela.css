@@ -1,47 +1,76 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #222;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     transition: background-image 0.5s ease-in-out;
+    padding: 15px;
 }
+
 .container {
-    max-width: 90vw;
+    width: 100%;
+    max-width: 600px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); 
-    padding: 30px 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
     border-radius: 15px;
 }
-#data {
-    color: #f0f0f0;
-    font-size: 2.5vh;
-    font-weight: 300;
-    margin-top: -10px;
-    margin-bottom: 25px;
-    letter-spacing: 1px;
-}
+
 #hora {
-    font-size: 10vh;
+    font-size: clamp(3rem, 12vw, 6rem);
     font-weight: 600;
     color: white;
     margin-bottom: 5px;
 }
-.input-container {
-    color: #fff;
-    font-size: 1rem;
+
+#data {
+    color: #f0f0f0;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-weight: 300;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
 }
+
+.input-container {
+    color: white;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
 input[type="file"] {
+    width: 100%;
+    max-width: 300px;
     margin-top: 10px;
-    padding: 5px;
+    padding: 8px;
     cursor: pointer;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 480px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    #hora {
+        font-size: clamp(2.5rem, 15vw, 4rem);
+    }
+
+    #data {
+        font-size: 1rem;
+    }
+
+    .input-container {
+        font-size: 0.9rem;
+    }
 }
