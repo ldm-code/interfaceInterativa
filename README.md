@@ -27,3 +27,6 @@
 - │ └── tela.js
 - └── README.md
 ---
+## Link do site:
+
+- https://teladebloqueioweb.netlify.app/
